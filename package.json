@@ -1,0 +1,28 @@
+{
+  "name": "markus-sdk-fetch",
+  "version": "1.0.0",
+  "description": "fetch sdk for markus",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "webpack src/example.ts --mode=development",
+    "build": "webpack src/index.ts --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudo-dog/Markus-SDK-fetch.git"
+  },
+  "keywords": [
+    "Markus"
+  ],
+  "author": "sudo.dog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sudo-dog/Markus-SDK-fetch/issues"
+  },
+  "homepage": "https://github.com/sudo-dog/Markus-SDK-fetch#readme",
+  "devDependencies": {
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
