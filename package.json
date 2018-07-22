@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha",
-    "start": "webpack src/example.ts --mode=development",
-    "build": "webpack src/index.ts --mode=production"
+    "start": "webpack dist/example.js --mode=development",
+    "dev": "tsc --p tsconfig.dev.json",
+    "build": "tsc --p tsconfig.build.json"
   },
   "repository": {
     "type": "git",

@@ -6,10 +6,10 @@
         "noImplicitAny": false,
         "strict": false,
         "outDir": "dist",
+        "declaration": true,
         "removeComments": true,
         "strictNullChecks": false,
         "noImplicitThis": false,
-        "sourceMap": true,
         "jsx": "react",
         "lib": [
             "dom",
@@ -24,7 +24,6 @@
         "public"
     ],
     "include": [
-        "src/**/*",
-        "render/**/*"
+        "src/index.ts"
     ]
 }

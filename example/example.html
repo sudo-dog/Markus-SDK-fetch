@@ -9,50 +9,9 @@
 </head>
 
 <body>
-    <input id="a" type="file">
+    <input id="a" type="file" multiple>
     <button id="btn">SUBMIT</button>
 </body>
 <script src="../dist/main.js"></script>
-<script>
-    // let formData = new FormData();
-    // let image = $("#file").prop("files")[0];
-    // formData.append("image", image);
-    // formData.append("tags", ['test', 'buffer']);
-    // formData.append("key", 'test');
-    // $.ajax({
-    //     type: "POST",
-    //     url: targetUrl + "/m/buffer",
-    //     processData: false,
-    //     contentType: false,
-    //     data: formData
-    // }).then(function (msg) {
-    //     alert('SUCCEED');
-    //     $('#response').html(msg.data.original + ': ' + msg.data.id);
-    // }).catch(function (msg) {
-    //     alert('FAILED, see console');
-    //     console.log(msg);
-    // });
-    document.getElementById("btn").addEventListener('click', () => {
-        let data = new FormData();
-        data.append('image', document.getElementById('a').files[0]);
-        data.append('key', 'test');
-        data.append('tag', JSON.stringify(['base64']));
-        const option = {
-            method: 'post',
-            mode: 'cors',
-            body: data
-        };
-        fetch('http://localhost:8080/m/buffer', option)
-            .then(function (response) {
-                if (response.ok) {
-                    return response.json();
-                } else {
-                    return;
-                }
-            }).then(function (data) {
-                console.log(data);
-            });
-    });
-</script>
 
 </html>
