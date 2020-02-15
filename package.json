@@ -1,6 +1,6 @@
 {
   "name": "markus-sdk-fetch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fetch sdk for markus",
   "main": "dist/index.js",
   "scripts": {

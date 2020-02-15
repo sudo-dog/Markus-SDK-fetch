@@ -2,6 +2,7 @@
  * @author WMXPY
  * @fileoverview Markus-SDK-Fetch
  */
+
 export enum MARKUS_RESPONSE {
     SUCCEED = "SUCCEED",
     FAILED = "FAILED",
