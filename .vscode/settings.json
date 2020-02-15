@@ -2,6 +2,9 @@
     "cSpell.words": [
         "Markus",
         "WMXPY",
-        "fileoverview"
-    ]
+        "fileoverview",
+        "sudoo",
+        "triforce"
+    ],
+    "tslint.configFile": "typescript/tslint.json"
 }
